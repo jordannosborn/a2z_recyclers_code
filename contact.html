@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <!------------ Logo ------------>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="a2z recyclers logo"></a>
+
+    <!------------ Navigation ------------>
+    <nav class="navbar">
+        <a href="#" class="nav_btn"><img src="img/hamburger.png" alt="hamburger menu icon"></a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="login.php">Login</a>
+            <a href="about.html">About Us</a>
+            <a href="purpose.html">Purpose</a>
+            <a class="current" href="contact.html">Contact Us</a>
+            <input class="search" type="text" placeholder="Search..">
+        </div>
+      </nav>
+    </header>
+
+    <!---------- Clock -------------->
+    <div class="clock">
+        <a href="https://time.is/Sydney" id="time_is_link" rel="nofollow">Time in Sydney:</a>
+        <span id="Sydney_z60b"></span>
+    </div>
+    <script src="//widget.time.is/t.js"></script>
+    <script>
+    time_is_widget.init({Sydney_z60b:{}});
+    </script>
+
+    <!------------ Contact form ------------->
+    <div class="content center">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <p>Address: 123 recyclers lane</p>
+            <p>Phone: 555-555</p>
+            <p>Email: A2ZRecyclers@gmail.com</p>
+            <h1>Enquire Now!</h1>
+            <form>
+                <div>
+                    <label for="fullName">Full name: </label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone number: </label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+
+                <div>
+                    <label for="item">What item you will recycle: </label>
+                    <input type="text" id="item" name="item"> 
+                </div>
+
+                <div>
+                    <label for="message">Leave us a message: </label>
+                    <input type="text" id="message" name="message" required> 
+                </div>
+                <div>
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!------------ Footer ------------>
+    <footer> 
+        <div class="footer-element">
+            &copy; A2Z Recyclers 2023
+        </div>
+
+        <div class="footer-element">
+            <a href="privacypolicy.pdf">Privacy Policy</a>
+        </div>
+
+        <div class="footer-element">
+            <a class="socials" href="facebook.com"><img src="img/facebook.png" alt="facebook icon"></a>
+            <a class="socials" href="twitter.com"><img src="img/twitter.png" alt="twitter icon"></a>
+            <a class="socials" href="instagram.com"><img src="img/instagram.png" alt="instagram icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
